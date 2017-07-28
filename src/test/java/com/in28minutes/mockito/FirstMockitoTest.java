@@ -10,6 +10,7 @@ public class FirstMockitoTest {
 	public void test() {
 		assertTrue(true);
 		
+		
 	}
 
 }

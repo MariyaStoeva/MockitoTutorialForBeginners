@@ -14,7 +14,7 @@ import org.powermock.reflect.Whitebox;
 
 @RunWith(PowerMockRunner.class)
 public class PowerMockitoTestingPrivateMethodTest {
-
+ 
 	@Mock
 	Dependency dependencyMock;
 

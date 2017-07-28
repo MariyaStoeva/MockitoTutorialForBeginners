@@ -27,7 +27,7 @@ public class PowerMockitoMockingStaticMethodTest {
 	@Test
 	public void powerMockito_MockingAStaticMethodCall() {
 
-		when(dependencyMock.retrieveAllStats()).thenReturn(
+		when(dependencyMock.retrieveAllStats()).thenReturn( 
 				Arrays.asList(1, 2, 3));
 
 		PowerMockito.mockStatic(UtilityClass.class);

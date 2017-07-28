@@ -6,8 +6,10 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
@@ -67,4 +69,6 @@ public class ListTest {
 		assertThat("in28Minutes", is(list.get(0)));
 		assertThat("in28Minutes", is(list.get(0)));
 	}
+	
+
 }

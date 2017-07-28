@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.in28minutes.data.api.TodoService;
+import com.unboundid.ldap.sdk.LDAPConnection;
 
 public class TodoBusinessImpl {
 
@@ -11,7 +12,7 @@ public class TodoBusinessImpl {
 
 	TodoBusinessImpl(TodoService todoService) {
 		this.todoService = todoService;
-	}
+	} 
 
 	public List<String> retrieveTodosRelatedToSpring(String user) {
 		List<String> filteredTodos = new ArrayList<String>();
@@ -32,4 +33,12 @@ public class TodoBusinessImpl {
 			}
 		}
 	}
+
+	public synchronized void finalizeClient()
+	{
+		  final LDAPConnection conn = new LDAPConnection();
+
+	  conn.close();
+	}
+
 }

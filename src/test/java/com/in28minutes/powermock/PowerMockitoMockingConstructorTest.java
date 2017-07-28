@@ -16,7 +16,7 @@ import org.powermock.modules.junit4.PowerMockRunner;
 
 @RunWith(PowerMockRunner.class)
 @PrepareForTest({ SystemUnderTest.class /*To be able to mock the Constructor, we need to add in the Class that creates the new object*/})
-public class PowerMockitoMockingConstructorTest {
+public class PowerMockitoMockingConstructorTest { 
 
 	private static final int SOME_DUMMY_SIZE = 100;
 

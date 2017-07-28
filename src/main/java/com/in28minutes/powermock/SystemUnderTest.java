@@ -11,7 +11,7 @@ public class SystemUnderTest {
 	private Dependency dependency;
 
 	public int methodUsingAnArrayListConstructor() {
-		ArrayList list = new ArrayList();
+		ArrayList list = new ArrayList(); 
 		return list.size();
 	}
 
