@@ -3,6 +3,7 @@ package com.clarity.business;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
+import java.lang.reflect.Executable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
@@ -74,6 +75,7 @@ public class ClientBOTest {
 		}
 		assertEquals(Currency.EURO, temp.getCurrency());
 		assertEquals(BigDecimal.ZERO, temp.getValue());
+		
 	}
 
 }

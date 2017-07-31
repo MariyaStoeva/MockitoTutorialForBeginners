@@ -38,6 +38,8 @@ public class PowerMockitoMockingConstructorTest {
 
 		int size = systemUnderTest.methodUsingAnArrayListConstructor();
 
+
 		assertEquals(SOME_DUMMY_SIZE, size);
+		
 	}
 }
