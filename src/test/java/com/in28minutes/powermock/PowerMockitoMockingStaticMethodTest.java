@@ -47,4 +47,9 @@ public class PowerMockitoMockingStaticMethodTest {
 		//PowerMockito.verifyStatic(Mockito.times(1));
 
 	}
+	
+	@Test 
+	public void testMethod() {
+		powerMockito_MockingAStaticMethodCall();
+	}
 }

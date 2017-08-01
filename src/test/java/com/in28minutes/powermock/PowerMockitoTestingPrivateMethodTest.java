@@ -26,7 +26,7 @@ public class PowerMockitoTestingPrivateMethodTest {
 		when(dependencyMock.retrieveAllStats()).thenReturn(
 				Arrays.asList(1, 2, 3));
 		long value = (Long) Whitebox.invokeMethod(systemUnderTest,
-				"methodCallingAStaticMethod");
+				"privateMethodUnderTest");
 	
 		assertEquals(6, value);
 		

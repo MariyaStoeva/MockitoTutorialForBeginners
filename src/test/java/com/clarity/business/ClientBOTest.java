@@ -60,6 +60,7 @@ public class ClientBOTest {
 		Amount temp = null;
 
 		temp = clientBO.getClientProductsSum(products);
+		
 	}
 
 	@Test
@@ -76,6 +77,13 @@ public class ClientBOTest {
 		assertEquals(Currency.EURO, temp.getCurrency());
 		assertEquals(BigDecimal.ZERO, temp.getValue());
 		
+	}
+	
+	@Test
+	public void testMethod() throws DifferentCurrenciesException {
+		testClientProductSum();
+		testClientProductSum1();
+		testClientProductSum2();
 	}
 
 }
