@@ -86,13 +86,13 @@ public class ClientBOTestRefactored {
 		return products;
 	}
 
-	@Test
-	public void testMethodes() throws DifferentCurrenciesException {
-		testClientProductSum_AllProductsSameCurrency();
-		testClientProductSum_DifferentCurrencies_ThrowsException();
-		testClientProductSum_NoProducts();
-		Amount expected = new AmountImpl(BigDecimal.ZERO, Currency.EURO);
-		Amount actual = new AmountImpl(BigDecimal.ZERO, Currency.EURO);
-		assertAmount( actual,  expected);
-	}
+//	@Test
+//	public void testMethodes() throws DifferentCurrenciesException {
+//		testClientProductSum_AllProductsSameCurrency();
+//		testClientProductSum_DifferentCurrencies_ThrowsException();
+//		testClientProductSum_NoProducts();
+//		Amount expected = new AmountImpl(BigDecimal.ZERO, Currency.EURO);
+//		Amount actual = new AmountImpl(BigDecimal.ZERO, Currency.EURO);
+//		assertAmount( actual,  expected);
+//	}
 }

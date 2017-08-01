@@ -56,11 +56,11 @@ public class ClientBOTest {
 				ProductType.BANK_GUARANTEE, new AmountImpl(
 						new BigDecimal("6.0"), Currency.EURO)));
 
-//		@SuppressWarnings("unused")
-//		Amount temp = null;
-//
-//		temp = clientBO.getClientProductsSum(products);
-//		
+		@SuppressWarnings("unused")
+		Amount temp = null;
+
+		temp = clientBO.getClientProductsSum(products);
+		
 	}
 
 	@Test
@@ -80,11 +80,11 @@ public class ClientBOTest {
 		
 	}
 	
-	@Test
-	public void testMethod() throws DifferentCurrenciesException {
-		testClientProductSum();
-		testClientProductSum1();
-		testClientProductSum2();
-	}
+//	@Test
+//	public void testMethod() throws DifferentCurrenciesException {
+//		testClientProductSum();
+//		testClientProductSum1();
+//		testClientProductSum2();
+//	}
 
 }
