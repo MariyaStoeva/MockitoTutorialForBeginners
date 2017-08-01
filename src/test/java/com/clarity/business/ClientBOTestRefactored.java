@@ -47,7 +47,7 @@ public class ClientBOTestRefactored {
 				new AmountImpl(new BigDecimal("5.0"), Currency.EURO),
 				new AmountImpl(new BigDecimal("6.0"), Currency.INDIAN_RUPEE) };
 
-		List<Product> products = createProductListWithAmounts(amounts);
+//		List<Product> products = createProductListWithAmounts(amounts);
 //
 //		@SuppressWarnings("unused")
 //		Amount actual = clientBO.getClientProductsSum(products);
