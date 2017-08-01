@@ -3,6 +3,7 @@ package com.in28minutes.junit.suite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
+import org.mockito.Mock;
 
 import com.in28minutes.junit.helper.ArraysTest;
 import com.in28minutes.junit.helper.StringHelperTest;
