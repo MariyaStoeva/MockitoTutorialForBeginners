@@ -56,11 +56,11 @@ public class ClientBOTest {
 				ProductType.BANK_GUARANTEE, new AmountImpl(
 						new BigDecimal("6.0"), Currency.EURO)));
 
-		@SuppressWarnings("unused")
-		Amount temp = null;
-
-		temp = clientBO.getClientProductsSum(products);
-		
+//		@SuppressWarnings("unused")
+//		Amount temp = null;
+//
+//		temp = clientBO.getClientProductsSum(products);
+//		
 	}
 
 	@Test
@@ -73,6 +73,7 @@ public class ClientBOTest {
 		try {
 			temp = clientBO.getClientProductsSum(products);
 		} catch (DifferentCurrenciesException e) {
+		  e.notify();
 		}
 		assertEquals(Currency.EURO, temp.getCurrency());
 		assertEquals(BigDecimal.ZERO, temp.getValue());
