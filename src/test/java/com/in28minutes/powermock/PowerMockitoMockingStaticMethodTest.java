@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.internal.verification.VerificationModeFactory;
 import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
@@ -30,7 +31,8 @@ public class PowerMockitoMockingStaticMethodTest {
 
 		when(dependencyMock.retrieveAllStats()).thenReturn( 
 				Arrays.asList(1, 2, 3));
-
+		
+		
 		PowerMockito.mockStatic(UtilityClass.class);
 
 		when(UtilityClass.staticMethod(anyLong())).thenReturn(150);
@@ -40,16 +42,14 @@ public class PowerMockitoMockingStaticMethodTest {
 		//To verify a specific method call
 		//First : Call PowerMockito.verifyStatic() 
 		//Second : Call the method to be verified
-		PowerMockito.verifyStatic(VerificationModeFactory.atLeastOnce());
+		PowerMockito.verifyStatic(VerificationModeFactory.atLeast(1));
 		UtilityClass.staticMethod(1 + 2 + 3);
 
+		assertEquals(150, UtilityClass.staticMethod(1 + 2 + 3));
 		// verify exact number of calls
-		//PowerMockito.verifyStatic(Mockito.times(1));
+		PowerMockito.verifyStatic(Mockito.times(2));
 
 	}
 	
-	@Test 
-	public void testMethod() {
-		powerMockito_MockingAStaticMethodCall();
-	}
+	
 }
