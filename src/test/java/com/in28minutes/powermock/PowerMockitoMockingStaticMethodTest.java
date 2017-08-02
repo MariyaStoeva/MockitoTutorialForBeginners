@@ -49,6 +49,7 @@ public class PowerMockitoMockingStaticMethodTest {
 		// verify exact number of calls
 		PowerMockito.verifyStatic(Mockito.times(2));
 
+		
 	}
 	
 	
