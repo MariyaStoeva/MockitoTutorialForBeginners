@@ -41,6 +41,7 @@ public class ClientBOTest {
 
 		assertEquals(Currency.EURO, temp.getCurrency());
 		assertEquals(new BigDecimal("11.0"), temp.getValue());
+		
 	}
 
 	@Test(expected = DifferentCurrenciesException.class)
