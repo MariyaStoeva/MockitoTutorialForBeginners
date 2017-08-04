@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.in28minutes.data.api.TodoService;
 import com.unboundid.ldap.sdk.LDAPConnection;
+import com.unboundid.ldap.sdk.LDAPException;
 
 public class TodoBusinessImpl {
 
@@ -34,11 +35,6 @@ public class TodoBusinessImpl {
 		}
 	}
 
-	public synchronized void finalizeClient()
-	{
-		  final LDAPConnection conn = new LDAPConnection();
 
-	  conn.close();
-	}
 
 }
