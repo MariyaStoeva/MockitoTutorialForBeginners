@@ -1,0 +1,48 @@
+#!RESULT ERROR
+#!CONNECTION ldap://localhost:10389
+#!DATE 2017-08-04T16:36:06.327
+#!ERROR [LDAP: error code 16 - NO_SUCH_ATTRIBUTE: failed for MessageType : ADD_REQUEST Message ID : 11     Add Request : Entry     dn[n]: dc=example,dc=com     objectClass: domain     objectClass: top     objectClass: organizationalUnit     objectClass: inetOrgPerson     objectClass: organizationalPerson     objectClass: person     uid: mkops     uid: sclaus     uid: jsteinbeck     ou: Users     ou: Groups     dn: ou=Users,dc=example,dc=com     dn: ou=Groups,dc=example,dc=com     dn: cn=Micha Kops,ou=Users,dc=example,dc=com     dn: cn=Santa Claus,ou=Users,dc=example,dc=com     dn: cn=John Steinbeck,ou=Users,dc=example,dc=com     sn: Kops     sn: Claus     sn: Steinbeck     cn: Micha Kops     cn: Santa Claus     cn: John Steinbeck     dc: example     userPassword: 0x69 0xB7 0x1D 0x79 0xF8  : ERR_04269 ATTRIBUTE_TYPE for OID dn does not exist!]
+dn: dc=example,dc=com
+objectClass: domain
+objectClass: top
+dc: example
+ 
+dn: ou=Users,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+ 
+dn: ou=Groups,dc=example,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
+ 
+dn: cn=Micha Kops,ou=Users,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Micha Kops
+sn: Kops
+uid: mkops
+userPassword:: abcdefg
+ 
+dn: cn=Santa Claus,ou=Users,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: Santa Claus
+sn: Claus
+uid: sclaus
+userPassword:: abcdefg
+ 
+dn: cn=John Steinbeck,ou=Users,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
+cn: John Steinbeck
+sn: Steinbeck
+uid: jsteinbeck
+userPassword:: abcdefg
